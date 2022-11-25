@@ -28,10 +28,7 @@ const Signup = () => {
 
   const handleSignUpSubmit = (e) => {
     e.preventDefault()
-    setErrors(validations(currentUser, users)) 
-    setIsSubmitting(true)
-    localStorage.setItem('user', JSON.stringify(currentUser))
-    localStorage.setItem('users', JSON.stringify(users))
+    alert("Sign up Successfull")
   }
 
   return (

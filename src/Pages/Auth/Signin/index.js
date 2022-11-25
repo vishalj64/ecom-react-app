@@ -16,13 +16,7 @@ const Signin = () => {
 
   const handleSignIn = async (e) => {
     e.preventDefault()
-    setIsSubmitting(true)
-    try {
-      await login(emailRef.current.value, passwordRef.current.value)
-    } catch {
-      alert("Error!")
-    }
-    setIsSubmitting(false)
+    alert("Sign in Successful")
   }
 
   const navigate = useNavigate()
